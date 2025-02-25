@@ -1,7 +1,21 @@
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
     justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav .logo h4 {
+    margin-left: 20px;
+    font-size: 24px;
 }
 
 nav ul {
