@@ -6,7 +6,7 @@ Learn how to structure a website using HTML i.e. different sections of a website
 
 ## Requirements
 
- Multiple pages: Home, Projects, Articles, Contact  
+☑ Multiple pages: Home, Projects, Articles, Contact  
 ☑ Should have a navigation bar that should be present on all pages and link to all the pages.  
 ☑ Structure in a way that you can easily add styles later.  
 ☑ Add SEO Meta tags to the website.  
