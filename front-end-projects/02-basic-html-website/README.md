@@ -12,4 +12,4 @@ Learn how to structure a website using HTML i.e. different sections of a website
 ☑ Add SEO Meta tags to the website.  
 
 
-### Project Link in Roadmap.sh: https://roadmap.sh/projects/basic-html-website
+### [Project Link in Roadmap.sh](https://roadmap.sh/projects/basic-html-website)
