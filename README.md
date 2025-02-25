@@ -4,7 +4,7 @@ Hi 👋 I'm Shazad and this repository contains the solutions for the [Roadmap.s
 
 ### Project Folder in repository:
 
-02 - [Basic HTML Website](https://github.com/shazad-shabjan/roadmap.sh-projects/frontend-projects/02-basic-html-website)
+02 - [Basic HTML Website](front-end-projects/02-basic-html-website)
 
 ### Project Links in roadmap.sh:
 
