@@ -133,3 +133,21 @@ section {
 .grid a {
     color: var(--text-color);
 }
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reviews .review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 50px;
+}
