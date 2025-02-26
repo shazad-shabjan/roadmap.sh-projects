@@ -2,20 +2,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
     width: 100%;
+    padding: 10px 10px;
 }
 
 nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 0;
 }
 
 nav .logo h4 {
+    color: black;
     margin-left: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 nav ul {
@@ -30,4 +31,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: red;
 }
