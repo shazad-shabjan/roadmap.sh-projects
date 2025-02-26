@@ -75,3 +75,28 @@ section {
     justify-content: center;
     padding: 5rem 0;
 }
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "projects work-experience education"
+    "projects open-source-work education";
+    gap: 1rem;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.work-experience {
+    grid-area: work-experience;
+}
+
+.education {
+    grid-area: education;
+}
+
+.open-source-work {
+    grid-area: open-source-work;
+}
