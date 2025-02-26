@@ -19,6 +19,7 @@
 body {
     background: url(../03-personal-portfolio/background.png) no-repeat center center/cover;
     color: var(--text-color);
+    padding: 0 1rem;
 }
 
 header {
@@ -26,7 +27,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px 20px;
+    padding: 2rem 0;
 }
 
 nav {
@@ -38,7 +39,6 @@ nav {
 
 nav .logo h4 {
     color: var(--accent-color);
-    margin-left: 20px;
     font-size: 1.5rem;
 }
 
@@ -64,5 +64,5 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 20px 20px;
+    padding: 2rem 0;
 }
