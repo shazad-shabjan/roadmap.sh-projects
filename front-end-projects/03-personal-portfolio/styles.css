@@ -4,7 +4,7 @@
     --main-color: #333333;
     --secondary-color: #2e86ab;
     --accent-color: #52b788;
-    --text-color: #333333;
+    --text-color: #f4f4f4;
     --background-color: linear-gradient(to right, var(--secondary-color), var(--accent-color));
 
     --transition: all 0.3s ease;
@@ -18,7 +18,7 @@
 }
 
 body {
-    background: ;
+    background: var(--background-color);
     color: var(--text-color);
 }
 
