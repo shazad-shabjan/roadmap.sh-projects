@@ -5,7 +5,6 @@
     --secondary-color: #2e86ab;
     --accent-color: #52b788;
     --text-color: #f4f4f4;
-    --background-color: linear-gradient(to bottom, var(--main-color), var(--accent-color));
 
     --transition: all 0.3s ease;
 }
@@ -18,7 +17,7 @@
 }
 
 body {
-    background: var(--background-color);
+    background: url(../03-personal-portfolio/background.png);
     color: var(--text-color);
 }
 
