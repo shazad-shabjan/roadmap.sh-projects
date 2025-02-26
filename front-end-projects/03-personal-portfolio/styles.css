@@ -19,6 +19,7 @@
 body {
     background: url(../03-personal-portfolio/background.png) no-repeat center center/cover;
     color: var(--text-color);
+    height: 100vh;
 }
 
 header {
