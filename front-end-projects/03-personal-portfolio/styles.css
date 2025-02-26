@@ -46,6 +46,7 @@ nav .logo h4 {
 nav ul {
     display: flex;
     list-style: none;
+    gap: 10px;
 }
 
 nav ul li {
