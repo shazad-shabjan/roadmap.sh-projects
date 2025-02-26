@@ -11,4 +11,4 @@ Learn how to style a website using CSS.
 ☑ Proper use of CSS techniques like Flexbox, media queries, and the box model.  
 ☑ A responsive navigation bar and well-styled contact form.  
 
-### [Project Link in Roadmap.sh]([https://roadmap.sh/projects/personal-portfolio](https://roadmap.sh/projects/portfolio-website))
+### [Project Link in Roadmap.sh](https://roadmap.sh/projects/personal-portfolio](https://roadmap.sh/projects/portfolio-website)
