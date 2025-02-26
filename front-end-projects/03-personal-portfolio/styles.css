@@ -87,16 +87,40 @@ section {
 
 .projects {
     grid-area: projects;
+    padding: 1rem 1rem;
 }
 
 .work-experience {
     grid-area: work-experience;
+    padding: 1rem 1rem;
 }
 
 .education {
     grid-area: education;
+    padding: 1rem 1rem;
 }
 
 .open-source-work {
     grid-area: open-source-work;
+    padding: 1rem 1rem;
+}
+
+.grid h3 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid p {
+    font-size: 1rem;
+}
+
+.courses-list {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    list-style: disc;
+}
+
+.grid a {
+    color: var(--text-color);
 }
