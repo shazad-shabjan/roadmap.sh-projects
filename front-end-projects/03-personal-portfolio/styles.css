@@ -279,6 +279,16 @@ article p {
     color: var(--text-color);
 }
 
+@media screen and (max-width: 1440px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        padding: 10.15rem 0;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
