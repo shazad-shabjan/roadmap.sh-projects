@@ -288,6 +288,10 @@ article p {
         flex-direction: column;
         gap: 2rem;
     }
+
+    footer {
+        padding: 10.15rem 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
