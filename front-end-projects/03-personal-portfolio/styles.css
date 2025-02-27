@@ -252,6 +252,15 @@ footer {
         width: 100%;
         padding: 2rem 2rem;
     }
+
+    .projects-list-and-info {
+        padding: 0 2rem;
+    }
+
+    .projects-list-and-info h1 {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -285,5 +294,14 @@ footer {
         "open-source-work"
         "education";
         grid-template-columns: 1fr;
+    }
+
+    .projects-list-and-info {
+        padding: 0 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 5rem 0;
     }
 }
