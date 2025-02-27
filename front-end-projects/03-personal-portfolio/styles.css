@@ -90,6 +90,7 @@ section {
     border: 2px solid var(--text-color);
     border-right: 1px solid var(--text-color);
     border-radius: 15px 0 0 15px;
+    background-color: var(--secondary-color);
 }
 
 .work-experience {
@@ -97,6 +98,7 @@ section {
     padding: 1rem 1rem;
     border: 2px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 .education {
@@ -105,6 +107,7 @@ section {
     border: 2px solid var(--text-color);
     border-left: 1px solid var(--text-color);
     border-radius: 0 15px 15px 0;
+    background-color: var(--secondary-color);
 }
 
 .open-source-work {
@@ -112,6 +115,7 @@ section {
     padding: 1rem 1rem;
     border: 2px solid var(--text-color);
     border-top: 1px solid var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 .grid h3 {
@@ -152,6 +156,7 @@ section {
     padding: 1rem 1rem;
     border: 2px solid var(--text-color);
     border-radius: 35px;
+    background-color: var(--secondary-color);
 }
 
 .reviews-container {
@@ -176,6 +181,114 @@ footer {
     font-size: 1.2rem;
 }
 
+.projects-list-and-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.projects-list-and-info h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.projects-list-and-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.projects-list-and-info ul li {
+    color: var(--text-color);
+    list-style: square;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem 2rem;
+}
+
+.articles article {
+    padding: 2rem 1rem;
+    border: 5px solid var(--text-color);
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+article h2 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+article p {
+    color: var(--main-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: var(--accent-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+.contact form input, textarea {
+    width: 90%;
+    padding: 1rem 1rem;
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact form input::placeholder, textarea::placeholder {
+    color: var(--main-color);
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+
+.contact form button {
+    padding: 1rem 2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact form button:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 1440px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        padding: 10.15rem 0;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -184,6 +297,10 @@ footer {
     .reviews-container {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    footer {
+        padding: 10.15rem 0;
     }
 }
 
@@ -227,6 +344,19 @@ footer {
         width: 100%;
         padding: 2rem 2rem;
     }
+
+    .projects-list-and-info {
+        padding: 0 2rem;
+    }
+
+    .projects-list-and-info h1 {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+
+    footer {
+        padding: 10.15rem 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -260,5 +390,14 @@ footer {
         "open-source-work"
         "education";
         grid-template-columns: 1fr;
+    }
+
+    .projects-list-and-info {
+        padding: 0 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 10rem 0;
     }
 }
