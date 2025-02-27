@@ -90,6 +90,7 @@ section {
     border: 2px solid var(--text-color);
     border-right: 1px solid var(--text-color);
     border-radius: 15px 0 0 15px;
+    background-color: var(--secondary-color);
 }
 
 .work-experience {
@@ -97,6 +98,7 @@ section {
     padding: 1rem 1rem;
     border: 2px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 .education {
@@ -105,6 +107,7 @@ section {
     border: 2px solid var(--text-color);
     border-left: 1px solid var(--text-color);
     border-radius: 0 15px 15px 0;
+    background-color: var(--secondary-color);
 }
 
 .open-source-work {
@@ -112,6 +115,7 @@ section {
     padding: 1rem 1rem;
     border: 2px solid var(--text-color);
     border-top: 1px solid var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 .grid h3 {
@@ -152,6 +156,7 @@ section {
     padding: 1rem 1rem;
     border: 2px solid var(--text-color);
     border-radius: 35px;
+    background-color: var(--secondary-color);
 }
 
 .reviews-container {
