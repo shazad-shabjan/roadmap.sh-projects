@@ -235,3 +235,30 @@ footer {
         gap: 1rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .reviews-container .review:first-child {
+        padding: 1rem 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+    
+    footer {
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        padding: 2rem 0;
+    }
+
+    .grid {
+        grid-template-areas: 
+        "projects"
+        "work-experience"
+        "open-source-work"
+        "education";
+        grid-template-columns: 1fr;
+    }
+}
