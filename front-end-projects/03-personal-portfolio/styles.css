@@ -175,3 +175,56 @@ footer {
     font-weight: 500;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-areas: 
+        "projects"
+        "work-experience"
+        "open-source-work"
+        "education";
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .work-experience {
+        border-radius: 0;
+    }
+
+    .education {
+        border-radius: 0 0 15px 15px;-radius: 0;
+    }
+
+    .open-source-work {
+        border-radius: 0;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+    }
+
+    .reviews-container .review:not(:first-child) {
+        display: none;
+    }
+
+    .reviews-container .review:first-child {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+}
