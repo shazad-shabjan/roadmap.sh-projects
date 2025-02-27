@@ -1,26 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --main-color: #333333;
+    --secondary-color: #2e86ab;
+    --accent-color: #52b788;
+    --text-color: #f4f4f4;
+
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: url(../03-personal-portfolio/background.png) no-repeat center center/cover;
+    color: var(--text-color);
+    padding: 0 1rem;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
     width: 100%;
+    padding: 2rem 0;
 }
 
 nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 0;
 }
 
 nav .logo h4 {
-    margin-left: 20px;
-    font-size: 24px;
+    color: var(--accent-color);
+    font-size: 1.5rem;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    gap: 10px;
 }
 
 nav ul li {
@@ -29,5 +54,211 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "projects work-experience education"
+    "projects open-source-work education";
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+}
+
+.projects {
+    grid-area: projects;
+    padding: 1rem 1rem;
+    border: 2px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+    border-radius: 15px 0 0 15px;
+}
+
+.work-experience {
+    grid-area: work-experience;
+    padding: 1rem 1rem;
+    border: 2px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.education {
+    grid-area: education;
+    padding: 1rem 1rem;
+    border: 2px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    border-radius: 0 15px 15px 0;
+}
+
+.open-source-work {
+    grid-area: open-source-work;
+    padding: 1rem 1rem;
+    border: 2px solid var(--text-color);
+    border-top: 1px solid var(--text-color);
+}
+
+.grid h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid p {
+    font-size: 1rem;
+}
+
+.courses-list {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    list-style: disc;
+}
+
+.grid a {
+    color: var(--text-color);
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+.reviews .review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 35px;
+}
+
+.reviews-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.reviews h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-areas: 
+        "projects"
+        "work-experience"
+        "open-source-work"
+        "education";
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .work-experience {
+        border-radius: 0;
+    }
+
+    .education {
+        border-radius: 0 0 15px 15px;-radius: 0;
+    }
+
+    .open-source-work {
+        border-radius: 0;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+    }
+
+    .reviews-container .review:not(:first-child) {
+        display: none;
+    }
+
+    .reviews-container .review:first-child {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .reviews-container .review:first-child {
+        padding: 1rem 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+    
+    footer {
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        padding: 2rem 0;
+    }
+
+    .grid {
+        grid-template-areas: 
+        "projects"
+        "work-experience"
+        "open-source-work"
+        "education";
+        grid-template-columns: 1fr;
+    }
 }
