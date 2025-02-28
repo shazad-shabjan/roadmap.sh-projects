@@ -32,3 +32,11 @@ header p {
     font-weight: 400;
     opacity: 0.6;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    text-align: center;
+}
