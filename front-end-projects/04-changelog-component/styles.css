@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: #333;
 }
 
 header {
@@ -19,6 +19,7 @@ header {
     padding: 20px 0;
     text-align: center;
     gap: 1.5rem;
+    color: white;
 }
 
 header h1 {
@@ -36,13 +37,14 @@ header p {
 .changelog {
     margin: auto;
     max-width: 700px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 30px;
     padding: 3.125rem 1.875rem 0 1.875rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 10px 7px rgba(255, 255, 255, 0.1);
 }
 
 .changelog-container {
@@ -71,7 +73,7 @@ header p {
 .dot {
     height: 19px;
     width: 19px;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
     margin: 16px 0;
 }
@@ -79,12 +81,13 @@ header p {
 .changelog-changes-container {
     display: flex;
     flex-direction: column;
-    border-left: solid black 1px;
+    border-left: solid white 1px;
     padding-left: 30px;
 }
 
 .changelog-changes {
     margin: 16px 0;
+    color: white;
 }
 
 .button-container {
@@ -94,11 +97,12 @@ header p {
 }
 
 button.changelog-button {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 12px 30px;
     margin-bottom: 30px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: 500;
 }
