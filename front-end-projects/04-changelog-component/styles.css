@@ -86,3 +86,19 @@ header p {
 .changelog-changes {
     margin: 16px 0;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+button.changelog-button {
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
