@@ -76,9 +76,13 @@ header p {
     margin: 16px 0;
 }
 
-.changelog-changes {
+.changelog-changes-container {
     display: flex;
     flex-direction: column;
     border-left: solid black 1px;
     padding-left: 30px;
+}
+
+.changelog-changes {
+    margin: 16px 0;
 }
