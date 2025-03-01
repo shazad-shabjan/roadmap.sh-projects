@@ -33,29 +33,51 @@ header p {
     opacity: 0.6;
 }
 
-main {
+.changelog {
+    margin: auto;
+    max-width: 700px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 3.125rem 1.875rem 0 1.875rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
-    text-align: center;
 }
 
 .changelog-container {
-    width: 50%;
-}
-
-.change {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.changelog-dates {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    align-items: end;
+    color: #c1c1c1;
+}
+
+.changelog-dots {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 10px;
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #000;
+    height: 19px;
+    width: 19px;
+    background-color: black;
     border-radius: 50%;
-    margin-right: 10px;
+    margin: 16px 0;
+}
+
+.changelog-changes {
+    display: flex;
+    flex-direction: column;
+    border-left: solid black 1px;
+    padding-left: 30px;
 }
