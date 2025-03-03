@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.testimonial {
+    padding: 1rem 1rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.testimonial-description-1 p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.testimonial-description-1 {
+    background-color: #333;
+    padding: 1rem 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.author {
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 70%;
+}
+
+.author img {
+    width: 10%;
+    background-color: #333;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-description-1::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 5%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #333;
+}
+
+.testimonial-2 {
+    border: 2px solid #333;
+    color: #333;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+.testimonial-2 .testimonial-description {
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.testimonial-2 img {
+    width: 10%;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 0;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.testimonial-3 .testimonial-author-img {
+    width: 30%;
+}
+
+.testimonial-3 .testimonial-author-img img {
+    width: 100%;
+    background-color: #333;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #eeee1b;
+}
+
+.testimonial-3 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    gap: 1rem;
+    border-radius: 10px;
+    width: 67%;
+}
+
+.testimonial-3 .container .author {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    & h4 {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    & p {
+        font-size: 1.1rem;
+        opacity: 0.6;
+    }
+}
