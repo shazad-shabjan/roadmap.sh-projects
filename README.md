@@ -9,6 +9,7 @@ Hi 👋 I'm Shazad and this repository contains the solutions for the [Roadmap.s
 03 - [Personal Portfolio](front-end-projects/03-personal-portfolio)  
 04 - [Changelog Component](front-end-projects/04-changelog-component)  
 05 - [Testimonial Cards](front-end-projects/05-testimonial-cards)  
+06 - [Testimonial Cards](front-end-projects/06-datepicker-ui)
 
 ### Project Links in roadmap.sh:
 
@@ -17,3 +18,4 @@ Hi 👋 I'm Shazad and this repository contains the solutions for the [Roadmap.s
 03 - [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)  
 04 - [Changelog Component](https://roadmap.sh/projects/changelog-component)  
 05 - [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
+06 - [Testimonial Cards](https://roadmap.sh/projects/datepicker-ui)
